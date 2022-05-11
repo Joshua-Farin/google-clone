@@ -4,7 +4,7 @@ import Avatar from '../components/Avatar'
 import {
   MicrophoneIcon, ViewGridIcon
 } from '@heroicons/react/solid';
-
+import {  SearchIcon } from '@heroicons/react/outline';
 
 export default function Home() {
   return (
@@ -37,8 +37,11 @@ export default function Home() {
 
       {/* Body */}
       <form>
-        <Image />
+        <Image src='https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png' width={300} height={100}/>
       </form>
+      <div>
+        <SearchIcon/>
+      </div>
 
       {/* Footer */}
               
