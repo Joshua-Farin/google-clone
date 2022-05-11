@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Avatar from '../components/Avatar'
+
 
 export default function Home() {
   return (
@@ -23,6 +24,11 @@ export default function Home() {
         <div className='flex space-x-4 items-center'>
           <p className='link'>Gmail</p>
           <p className='link'>Images</p>
+
+          {/* Icon */}
+
+          
+          <Avatar url='https://coaching.papareact.com/ai9'/>
         </div>
       </header>
 
