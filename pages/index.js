@@ -7,13 +7,20 @@ import {
 import {  SearchIcon } from '@heroicons/react/outline';
 import Footer from '../components/Footer';
 import { useRef } from "react";
+import { useRouter } from 'next/router';
 
 export default function Home() {
+  const router = useRouter();
   const searchInputRef = useRef(null);
-// 1:33:00 https://www.youtube.com/watch?v=24xpTmaPOdY
+
   const search = e => {
     e.preventDefault();
     const term = searchInputRef.current.value;
+
+    if (!term) return;
+
+    router.push(`/search?term=${term}`);
+
   }
 
   return (
