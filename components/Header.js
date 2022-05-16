@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { useRef } from 'react';
 import Avatar from './Avatar';
+import HeaderOptions from './HeaderOptions';
 
 function Header() {
   const router = useRouter();
@@ -40,6 +41,9 @@ function Header() {
             </form>
             <Avatar className='ml-auto' url='https://coaching.papareact.com/ai9'/>
           </div>
+          
+          {/* Header Options */}
+          <HeaderOptions/>
           
       </header>
     </div>
