@@ -1,4 +1,3 @@
-import React from 'react'
 import HeaderOption from './HeaderOption'
 import {
     DotsVerticalIcon,
@@ -14,7 +13,7 @@ function HeaderOptions() {
     <div>
       {/* Left */}
       <div className='flex space-x-6'>
-        <HeaderOption Icon={SearchIcon} title='All' selected/>
+        <HeaderOption Icon={SearchIcon} title='All' selected />
         <HeaderOption Icon={PhotographIcon} title='Images' />
         <HeaderOption Icon={PlayIcon} title='Videos'/>
         <HeaderOption Icon={NewspaperIcon} title='News'/>

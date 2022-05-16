@@ -19,7 +19,7 @@ function Header() {
       router.push(`/search?term=${term}`);
   }
   return (
-    <div>
+    
       <header className='sticky top-0 bg-white'>
           <div className='flex w-full p-6 items-center'>
             <Image 
@@ -46,7 +46,7 @@ function Header() {
           <HeaderOptions/>
           
       </header>
-    </div>
+    
   )
 }
 
