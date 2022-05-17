@@ -37,6 +37,7 @@ export async function getServerSideProps (context) {
   ).then((response) => response.json());
 
   // After the SERVER has rendered... Pass the results to the client
+  // Need to fix error where incorrect results show up on page
   return {
     props: {
       results: data,
